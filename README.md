@@ -1,21 +1,23 @@
-# Sparta nbCamp
-
-스파르타 코딩 클럽 내일배움캠프 1주차 개인 과제
+# 스파르타 코딩 클럽 내일배움캠프 1주차 개인 과제
+<br/>
 
 ## Swift로 계산기 만들기
 
 <p align="center">
 <img width="772" alt="Image" src="https://github.com/user-attachments/assets/0bd1af67-0241-466f-81d5-357768141221" />
 </p>
+<br/>
 
 ## 📋 프로젝트 개요
 iOS 개발 언어인 Swift를 학습해봅시다 🔥
 지금까지 배운 Swift 문법을 응용해서 나만의 계산기를 만들어 봅니다!
+<br/><br/>
 
 ## 사용 기술
 - 언어: Swift 5.9
 - 개발 환경: Xcode 16+
 - 패턴 적용: 단일 책임 원칙 (SRP)
+<br/>
 
 ## 📝 기능 설명
 1. 기본 사칙연산 지원 (Lv1~Lv2)
@@ -28,6 +30,7 @@ iOS 개발 언어인 Swift를 학습해봅시다 🔥
 2. 객체지향적 설계 적용 (Lv3)
    - 연산 클래스를 개별적으로 분리하여 Calculator가 직접 연산을 수행하지 않도록 구현
    - 단일 책임 원칙(SRP)을 적용하여 각 클래스가 하나의 역할(책임)만 담당
+<br/>
 
 ## 🧑‍💻 코드 예시
 ### Calculator 클래스에서 연산 클래스 활용
@@ -56,6 +59,7 @@ class Calculator {
     }
 }
 ```
+<br/>
 
 ### 연산 클래스 예시
 ``` swift
@@ -68,6 +72,7 @@ class DivideOperation {
     }
 }
 ```
+<br/>
 
 ### 인스턴스 생성 및 테스트 예시
 ``` swift
@@ -79,10 +84,12 @@ print(calculator.operate(.multiply, 1, 2))
 print(calculator.operate(.divide, 1, 3))
 print(calculator.operate(.mod, 4, 3))
 ```
+<br/>
 
 ## 예외 처리
 - DivideOperation: 0으로 나누는 경우 연산을 수행하지 않고 0.0을 return
 - ModuloOperation: 0으로 나누는 경우 연산을 수행하지 않고 0을 return
+<br/>
 
 ## 과제 요구사항 반영 여부
 - Lv1: 기본 사칙연산 구현
